@@ -9,7 +9,6 @@ dotenv_path = os.path.join(os.path.dirname(__file__), ".env")
 load_dotenv(dotenv_path, verbose=True)
 
 
-# ボットトークンとソケットモードハンドラーを使ってアプリを初期化します
 app = App(token=os.environ.get("SLACK_BOT_TOKEN"))
 
 
@@ -37,6 +36,5 @@ def ask_for_introduction(event, say):
         say(text=text, channel=event["channel"])
 
 
-# アプリを起動します
 if __name__ == "__main__":
     SocketModeHandler(app, os.environ["SLACK_APP_TOKEN"]).start()
