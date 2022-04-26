@@ -29,9 +29,9 @@ def ask_for_introduction(event, say):
     if effect_size <= 0 or effect_size >= 1.0:
         say(text="評価指標の差は 0 ~ 1 の間にしてね", channel=event["channel"])
     else:
-        user_id = event["user"]
-        text = f"<@{user_id}>!"
-        text += f"ABテスト時の評価指標の差が {effect_size} と仮定すると、"
+        # user_id = event["user"]
+        # text = f"<@{user_id}>!"
+        text = f"ABテスト時の評価指標の差が {effect_size} と仮定すると、"
         text += f"\n必要なサンプルサイズは {sample_size} と推定されます"
         say(text=text, channel=event["channel"])
 
