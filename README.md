@@ -1,1 +1,1 @@
-# slackbot_sample_size
+# Slackbot Sample Size
