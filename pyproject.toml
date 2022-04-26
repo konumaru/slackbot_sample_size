@@ -8,6 +8,7 @@ authors = ["konumaru <konumaru1022@gmail.com>"]
 python = "3.9.7"
 python-dotenv = "^0.20.0"
 slack-bolt = "^1.13.0"
+statsmodels = "^0.13.2"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^4.0.1"
